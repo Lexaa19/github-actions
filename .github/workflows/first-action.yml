@@ -1,0 +1,14 @@
+name: First Workflow
+#define when the workflow shall be executed (an event)
+#this event waits for the user to manually start the workflow.
+on: workflow_dispatch
+jobs:
+  #give the job name
+  first-job:
+    #define the environment
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello world"
+      - name: Print goog-bye
+        run: echo "Good-bye"
